@@ -1,6 +1,5 @@
 package com.example.madproject.models
 
-
 data class BillReminderModel(
     var billId: String? = null,
     var billTitle: String? = null,

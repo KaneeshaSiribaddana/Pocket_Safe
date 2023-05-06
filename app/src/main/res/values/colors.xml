@@ -9,7 +9,20 @@
 
     <!--colros for card-->
     <color name="white">#fff</color>
-
+    <color name="blue">#1338BE</color>
+    <color name="theamblue">#2348FF</color>
+    <color name="txtblack">#050505</color>
+    <color name="mrgBlue">#051094</color>
+    <color name="AzureBlue">#8080FF</color>
+    <color name="VividBlue">#0197F6</color>
+    <color name="BBlue">#0000FF</color>
+    <color name="LBlue">#211BF9</color>
+    <color name="L2Blue">#3388FF</color>
+    <color name="L3Blue">#55AAFF</color>
+    <color name="L4Blue">#00A7FF</color>
+    <color name="L5Blue">#0051C4</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#F16B3A</color>
         <color name="primary_pocketSafe">#2348ff</color>
         <color name="primary_white">#ffffff</color>
         <color name="primary_200">#0F9D58</color>
