@@ -3,6 +3,7 @@ package com.example.familyshare2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.familyshare2.databinding.ActivityFamilyShareHomeBinding
 
 class FamilyShareHome : AppCompatActivity() {
@@ -14,10 +15,14 @@ class FamilyShareHome : AppCompatActivity() {
         binding = ActivityFamilyShareHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.addMenberCard.setOnClickListener {
+        binding.addMemberCard.setOnClickListener {
             val intent = Intent(this, FamilySharingAddMember::class.java)
             startActivity(intent)
 
+        }
+        fun redirectAddMember(view: View){
+            val intent = Intent(this, FamilySharingAddMember::class.java)
+            startActivity(intent)
         }
     }
 }

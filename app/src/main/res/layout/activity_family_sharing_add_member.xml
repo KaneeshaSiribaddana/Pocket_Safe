@@ -46,8 +46,8 @@
             android:hint="Add Member Email"
             android:inputType="textEmailAddress"
             android:textAlignment="textStart"
-            android:textColor="#0D18EA"
-            android:textColorHint="#0D18EA"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
             android:textStyle="italic" />
 
 

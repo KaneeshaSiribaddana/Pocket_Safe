@@ -25,24 +25,28 @@
         android:textStyle="bold" />
 
 
-
     <androidx.cardview.widget.CardView
 
-        android:id="@+id/addMenberCard"
+        android:id="@+id/addMemberCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:padding="30dp"
         app:cardBackgroundColor="#2348FF"
         app:cardCornerRadius="20dp">
 
 
-        <Button
+        <TextView
             android:id="@+id/buttonadd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:backgroundTint="#2348FE"
-            android:text="add member"/>
+            android:onClick="redirectAddMember"
+            android:text="Add Member"
+            android:textColor="#ffff" />
 
 
     </androidx.cardview.widget.CardView>
