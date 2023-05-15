@@ -37,7 +37,7 @@ val itemView=LayoutInflater.from(parent.context).inflate(R.layout.bill_card_item
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = currentReminder?.billDate ?: 0
         val convertedYear = calendar.get(Calendar.YEAR)
-        val convertedMonth = calendar.get(Calendar.MONTH)
+        val convertedMonth = calendar.get(Calendar.MONTH)+1
         val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
 
         holder.fetchDate.text=dayOfMonth.toString()

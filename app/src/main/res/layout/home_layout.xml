@@ -106,7 +106,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center|start"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:onClick="redirectIncome">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -353,17 +354,35 @@
 
                 </TableLayout>
 
-                <Button
-                    android:id="@+id/btnBillReminder"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:backgroundTint="#2348FF"
-                    android:onClick="redirectBillReminder"
-                    android:text="Bill Reminder"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#2348FF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnBillReminder"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#2348FF"
+                        android:onClick="redirectBillReminder"
+                        android:text="Bill Reminder"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#2348FF" />
+
+                    <Button
+                        android:id="@+id/btnFamilyShare"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:onClick="redirectFamilyShare"
+                        android:text="Bill Reminder"
+                        android:textColor="#2348FF"
+                        android:textColorHint="#2348FF" />
+                </LinearLayout>
 
             </LinearLayout>
 

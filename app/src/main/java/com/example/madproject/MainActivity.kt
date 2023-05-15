@@ -16,5 +16,12 @@ class MainActivity : AppCompatActivity() {
        val intent = Intent(this, BillReminder::class.java)
        startActivity(intent)
    }
-
+    fun redirectIncome(view: View){
+        val intent = Intent(this, IncomesView::class.java)
+        startActivity(intent)
+    }
+    fun redirectFamilyShare(view: View){
+        val intent = Intent(this, FamilyShareHome::class.java)
+        startActivity(intent)
+    }
 }

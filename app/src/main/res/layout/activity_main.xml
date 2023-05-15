@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:backgroundTint="#2348FF"
             android:onClick="redirectAddBill"
-            android:text="Add +"
+            android:text="Add+"
             android:textAlignment="viewStart"
             android:textColor="#FFFFFF"
             app:cornerRadius="10dp" />
@@ -104,7 +104,7 @@
                                 android:id="@+id/npheadingValue"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="2 Days"
+                                android:text="-"
                                 android:textAlignment="center"
                                 android:textColor="#2348FF" />
                         </LinearLayout>
@@ -134,7 +134,7 @@
                                 android:id="@+id/bill_RemainingValue"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="14"
+                                android:text="-"
                                 android:textAlignment="center"
                                 android:textColor="#2348FF" />
                         </LinearLayout>
@@ -163,10 +163,10 @@
                             android:textAlignment="center" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/overallnAmount"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Rs 23000"
+                            android:text="-"
                             android:textAlignment="center"
                             android:textColor="#2348FF" />
                     </LinearLayout>

@@ -1,93 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/advent_pro_bold"
-            android:text="Bill Reminder"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        tools:visibility="visible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:background="#2342FF"
-        android:backgroundTint="#2348ff"
-        app:cardCornerRadius="30dp"
-        app:contentPaddingBottom="10dp">
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical"
+        xmlns:tools="http://schemas.android.com/tools">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/updateBillHeading"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/anton"
-                android:text="Wifi Router"
-                android:textAlignment="viewStart"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/advent_pro_bold"
+                android:text="Bill Reminder"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#2342FF"
+            android:backgroundTint="#2348ff"
+            app:cardCornerRadius="30dp"
+            app:contentPaddingBottom="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TableLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TableRow
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp">
+                        android:layout_height="match_parent">
 
-                        <TextView
-                            android:id="@+id/updateBillTitle"
+                        <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="40dp"
-                            android:fontFamily="@font/advent_pro_bold"
-                            android:text="Title"
-                            android:textColor="#FFFFFF"
-                            android:textSize="15sp" />
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
 
-                        <EditText
-                            android:id="@+id/updateBillTitleValue"
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp"
-                            android:backgroundTint="#FFFFFF"
-                            android:ems="10"
-                            android:fontFamily="@font/advent_pro_bold"
-                            android:inputType="textPersonName"
-                            android:text="Wifi Router"
-                            android:textColor="#FFFFFF" />
+                            <TextView
+                                android:id="@+id/updateBillTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:fontFamily="@font/advent_pro_bold"
+                                android:text="Title"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
 
-                    </TableRow>
+                            <EditText
+                                android:id="@+id/updateBillTitleValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:backgroundTint="#FFFFFF"
+                                android:ems="10"
+                                android:fontFamily="@font/advent_pro_bold"
+                                android:inputType="textPersonName"
+                                android:text=""
+                                android:textColor="#FFFFFF" />
+
+                        </TableRow>
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -113,7 +107,7 @@
                             android:ems="10"
                             android:fontFamily="@font/advent_pro_bold"
                             android:inputType="textPersonName"
-                            android:text="23 / 03 / 2023"
+                            android:text=""
                             android:textColor="#FFFFFF" />
                     </TableRow>
 
@@ -141,11 +135,10 @@
                             android:ems="10"
                             android:fontFamily="@font/advent_pro_bold"
                             android:inputType="textPersonName"
-                            android:text="Rs 4500"
+                            android:text=""
                             android:textColor="#FFFFFF" />
 
                     </TableRow>
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -170,7 +163,7 @@
                             android:ems="10"
                             android:fontFamily="@font/advent_pro_bold"
                             android:inputType="textPersonName"
-                            android:text="Internet"
+                            android:text=""
                             android:textColor="#FFFEFE" />
 
                     </TableRow>
@@ -198,7 +191,7 @@
                             android:ems="10"
                             android:fontFamily="@font/advent_pro_bold"
                             android:inputType="textPersonName"
-                            android:text="Monthly"
+                            android:text=""
                             android:textColor="#FFFEFE" />
 
                     </TableRow>
@@ -228,7 +221,7 @@
                             android:fontFamily="@font/advent_pro_bold"
                             android:gravity="start|top"
                             android:inputType="textMultiLine"
-                            android:text="Dialog Home Broadband at home"
+                            android:text=""
                             android:textColor="#FFFFFF" />
 
                     </TableRow>
@@ -248,7 +241,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -261,7 +254,7 @@
             app:cornerRadius="10dp" />
 
         <Button
-            android:id="@+id/btnEdit"
+            android:id="@+id/btnRemove"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -276,3 +269,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

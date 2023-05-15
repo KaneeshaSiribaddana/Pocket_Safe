@@ -107,20 +107,20 @@
                             android:textColor="#FFFFFF"
                             android:textSize="15sp" />
 
-                        <DatePicker
-                            android:id="@+id/bill_AddDateValue"
+                        <Button
+                            android:layout_height="48dp"
                             android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            android:backgroundTint="#FFFFFF"
-                            android:calendarViewShown="false"
-                            android:datePickerMode="spinner"
-                            android:ems="10"
-                            android:headerBackground="#2348ff"
-                            android:hint="Enter the Date"
-                            android:calendarTextColor="@color/white"
-                            android:textColorHint="@color/white"
-                            android:maxDate="@{new java.text.SimpleDateFormat(`yyyy/MM/dd`, java.util.Locale.US).parse(`2099/12/31`).time}"
-                            android:minDate="@{new java.text.SimpleDateFormat(`yyyy/MM/dd`, java.util.Locale.US).parse(`2022/01/01`).time}" />
+                            android:id="@+id/ButtonCalendar"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#FDFDFD"
+                            android:text="Choose"
+                            android:onClick="insertDataBill"
+                            android:textColor="#2348ff"
+                            app:cornerRadius="10dp"
+                        />
 
                     </TableRow>
 
